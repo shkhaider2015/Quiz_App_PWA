@@ -1,0 +1,58 @@
+[
+    {
+        "question" : "Everything in React is ____",
+        "option1" : "Module",
+        "option2" : "Component",
+        "option3" : "Package",
+        "option4" : "Class",
+        "answer" : "Component"
+    },
+    {
+        "question" : "In which direcory React components are saved?",
+        "option1" : "Inside js/components/",
+        "option2" : "Inside vendor/components/",
+        "option3" : "Inside external/components/",
+        "option4" : "Inside vendor/",
+        "answer" : "Inside js/components/"
+    },
+    {
+        "question" : "How many element does a React component return?",
+        "option1" : "2 Elements",
+        "option2" : "1 Element",
+        "option3" : "Multiple Elements",
+        "option4" : "None of These",
+        "answer" : "Multiple Elements"
+    },
+    {
+        "question" : "What is State in React?",
+        "option1" : "A persistant storage",
+        "option2" : "An internal data store (object) of a component.",
+        "option3" : "Both of these",
+        "option4" : "None of these",
+        "answer" : "An internal data store (object) of a component."
+    },
+    {
+        "question" : "What is Babel?",
+        "option1" : "A transpiler.",
+        "option2" : "An interpreter",
+        "option3" : "A Compiler",
+        "option4" : "Both Compiler and Transpilar",
+        "answer" : "Both Compiler and Transpilar"
+    },
+    {
+        "question" : "What does \"Webpack\" command do?",
+        "option1" : "Transpiles all the Javascript down into one file",
+        "option2" : "Runs react local development server.",
+        "option3" : "A module bundler",
+        "option4" : "None of these",
+        "answer" : "A module bundler"
+    },
+    {
+        "question" : "What port is the default where the webpack dev-server will run?",
+        "option1" : "3000",
+        "option2" : "8080",
+        "option3" : "3306",
+        "option4" : "5000",
+        "answer" : "8080"
+    }
+]
