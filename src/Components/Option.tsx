@@ -25,10 +25,10 @@ export const Option = ( {opt1,opt2,opt3,opt4, DATA,answers,currentQuestion, hand
 
     return <FormControl component="fieldset">
                 <RadioGroup aria-label="gender" name="gender1" value={answers[currentQuestion]} onChange={handleChange}>
-                    <FormControlLabel value={DATA[currentQuestion].option1} control={<Radio color="primary" />} label={opt1} />
-                    <FormControlLabel value={DATA[currentQuestion].option2} control={<Radio color="primary" />} label={opt2} />
-                    <FormControlLabel value={DATA[currentQuestion].option3} control={<Radio color="primary" />} label={opt3} />
-                    <FormControlLabel value={DATA[currentQuestion].option4} control={<Radio color="primary" />} label={opt4} />
+                    <FormControlLabel value={DATA[currentQuestion].option1} control={<Radio color="secondary" />} label={opt1} />
+                    <FormControlLabel value={DATA[currentQuestion].option2} control={<Radio color="secondary" />} label={opt2} />
+                    <FormControlLabel value={DATA[currentQuestion].option3} control={<Radio color="secondary" />} label={opt3} />
+                    <FormControlLabel value={DATA[currentQuestion].option4} control={<Radio color="secondary" />} label={opt4} />
                 </RadioGroup>
             </FormControl>
 }

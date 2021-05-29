@@ -2,11 +2,12 @@ import { Button, Paper } from '@material-ui/core'
 import React from 'react'
 import { Option } from './Option'
 import DATA from "../Data/data.json";
+import { CounterContext } from '../Context/ContextAPI'
 
 
 export const Quizcard = () => {
 
-    // const { increment, counter } = React.useContext(CounterContext);
+    const { increment, counter } = React.useContext(CounterContext);
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const [answers, setAnswers] = React.useState<Array<string>>(['', '', '', '', '', '', '']);
     const [selected, setSelected] = React.useState(true);
@@ -28,7 +29,7 @@ export const Quizcard = () => {
         setCurrentQuestion(nextQuestion);
 
         if (answers[currentQuestion] === DATA[currentQuestion].answer) {
-            // increment();
+            increment();
         }
     }
     const handleAnswer = (y: string) => {
@@ -46,12 +47,12 @@ export const Quizcard = () => {
 
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
                     <h3>Your Result</h3>
-                    {/* <h3> {counter}/7 </h3>
+                    <h3> {counter}/7 </h3>
                     {
                         counter > 3
                             ? <h3>Looks Good :)</h3>
                             : <h3>Try Again :(</h3>
-                    } */}
+                    }
 
                 </div>
             </div>
@@ -87,14 +88,14 @@ export const Quizcard = () => {
                 <Button
                     style={{ marginRight: 8 }}
                     variant="contained"
-                    color="primary"
+                    color="secondary"
                     onClick={() => handleCurrentQuestion(0)}
                     disabled={currentQuestion === 0}  >Back</Button>
 
                 <Button
                     style={{ marginLeft: 8 }}
                     variant="contained"
-                    color="primary"
+                    color="secondary"
                     onClick={() => handleCurrentQuestion(1)}  > {currentQuestion !== (DATA.length - 1) ? "Next" : "Submit"} </Button>
             </div>
         </Paper>)
