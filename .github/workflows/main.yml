@@ -38,10 +38,8 @@ jobs:
       - name: creating build
         run: sudo yarn build
       
-      - name: go to build
-        run: cd build
         
       - name: installing Surge
         run: npm install --global surge
       - name: deploy on surge
-        run: surge --domain https://shkhaider_pwa_quiz_app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build --domain https://shkhaider_pwa_quiz_app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
