@@ -86,6 +86,10 @@ self.addEventListener('install', function(event) {
     caches.open(cacheName).then(function(cache) {
       return cache.addAll(
         [
+          './App.tsx',
+          './index.tsx',
+          './index.css',
+          './App.css',
           './Components/History.tsx',
           './Components/Option.tsx',
           './Components/Quizcard.tsx',
