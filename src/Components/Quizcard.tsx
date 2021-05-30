@@ -41,6 +41,10 @@ export const Quizcard = () => {
     }
     
 
+    const handleReset = () => {
+        increment()
+    }
+
     if (currentQuestion > (DATA.length - 1)) {
         return <Paper style={{ width: '40%', height: '40%', backgroundColor: '#523c93', color: 'whitesmoke' }} >
             <div style={{ display: 'grid', placeItems: 'center' }} >
@@ -53,6 +57,8 @@ export const Quizcard = () => {
                             ? <h3>Looks Good :)</h3>
                             : <h3>Try Again :(</h3>
                     }
+
+                    <Button style={{ marginTop : '2%' }} variant="contained" color="secondary" onClick={() => handleReset()} >Reset</Button>
 
                 </div>
             </div>

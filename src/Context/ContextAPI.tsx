@@ -13,7 +13,7 @@ export const CounterContext = createContext<ContextType>({
 const CounterContextProvider: React.FC = ({ children }) => {
     const [counter, setCounter] = useState(0);
   
-    const increment = useCallback(() => {
+    const increment =  useCallback(() => {
       setCounter((previousCounter) => previousCounter + 1);
     }, []);
   
