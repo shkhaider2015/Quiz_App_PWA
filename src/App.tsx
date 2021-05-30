@@ -11,8 +11,8 @@ function App() {
     }} >
       
         <h1 style={{ color : 'whitesmoke' }} >Quiz App with Typescript</h1>
-        <CounterContextProvider>
           <span>changes</span>
+        <CounterContextProvider>
           <Quizcard />
         </CounterContextProvider>
 
