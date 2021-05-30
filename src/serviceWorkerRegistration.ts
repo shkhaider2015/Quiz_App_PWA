@@ -137,7 +137,7 @@ function checkValidServiceWorker(swUrl: string, config?: Config) {
           });
         });
 
-        console.log("Check")
+        console.log(`Response.status : ${response.status} | ContentType : ${contentType} | contentType.IndexOf(javascript) : ${contentType?.indexOf('javascript')} `)
       } else {
         // Service worker found. Proceed as normal.
         
