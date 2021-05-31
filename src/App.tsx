@@ -10,7 +10,7 @@ function App() {
       backgroundImage: 'linear-gradient(53deg, rgba(58,43,104,1) 0%, rgba(35,25,65,1) 47%, rgba(8,84,99,1) 100%)',
     }} >
       
-        <h1 style={{ color : 'whitesmoke' }} >Quiz App with Typescript</h1>
+        <span style={{ color : 'whitesmoke', fontSize : '6vh', paddingBottom : '3vh' }} >Quiz App with Typescript</span>
           
         <CounterContextProvider>
           <Quizcard />

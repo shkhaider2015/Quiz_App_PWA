@@ -7,7 +7,7 @@ import { CounterContext } from '../Context/ContextAPI'
 
 export const Quizcard = () => {
 
-    const { increment, counter } = React.useContext(CounterContext);
+    const { increment, reset, counter } = React.useContext(CounterContext);
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const [answers, setAnswers] = React.useState<Array<string>>(['', '', '', '', '', '', '']);
     const [selected, setSelected] = React.useState(true);
@@ -42,7 +42,10 @@ export const Quizcard = () => {
     
 
     const handleReset = () => {
-        increment()
+        reset()
+        setCurrentQuestion(0)
+        setSelected(false)
+        setAnswers(['', '', '', '', '', '', ''])
     }
 
     if (currentQuestion > (DATA.length - 1)) {
