@@ -84,11 +84,12 @@ const cacheName = "QA";
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
+      
       return cache.addAll(
         [
           'index.html'
         ]
       );
-    }).catch(e => console.error("E : ",e))
+    }).catch(e => console.error("SWT - E : ",e))
   );
 });
