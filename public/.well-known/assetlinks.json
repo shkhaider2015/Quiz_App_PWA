@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "sh.surge.shkhaider_pwa_quiz_app.twa",
+                   "sha256_cert_fingerprints": ["DA:83:1F:F6:F1:1B:37:F2:68:79:22:BA:D2:B3:EA:A3:FF:BF:2D:E1:12:CD:EA:D2:52:41:E4:65:99:25:E6:0E"] }
+    }]
