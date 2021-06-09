@@ -1,8 +1,9 @@
-import { Button, Paper } from '@material-ui/core'
+import { Button, Grid, Paper } from '@material-ui/core'
 import React from 'react'
 import { Option } from './Option'
 import DATA from "../Data/data.json";
-import { CounterContext } from '../Context/ContextAPI'
+import { CounterContext } from '../Context/ContextAPI';
+import './mystyle.css';
 
 
 export const Quizcard = () => {
@@ -49,7 +50,9 @@ export const Quizcard = () => {
     }
 
     if (currentQuestion > (DATA.length - 1)) {
-        return <Paper style={{ width: '40%', height: '40%', backgroundColor: '#523c93', color: 'whitesmoke' }} >
+        return <Grid container alignContent="center" justify="center" >
+            <Grid item   xs={11} sm={8} md={6} lg={6} xl={4} >
+            <Paper  elevation={3}  style={{ width: '100%%', padding: '10%', backgroundColor: '#523c93', color: 'whitesmoke' }} >
             <div style={{ display: 'grid', placeItems: 'center' }} >
 
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
@@ -66,10 +69,14 @@ export const Quizcard = () => {
                 </div>
             </div>
         </Paper>
+            </Grid>
+        </Grid>
     }
     else {
 
-        return (<Paper elevation={0} style={{ width: '40%', padding: 20, backgroundColor: '#523c93', color: 'whitesmoke', borderRadius: 10 }} >
+        return  ( <Grid container alignContent="center" justify="center" >
+            <Grid item  xs={11} sm={8} md={6} lg={6} xl={4} >
+            <Paper elevation={3} style={{ width : '100%', padding : '10%', backgroundColor: '#523c93',color: 'whitesmoke'}}  >
             <div style={{ display: 'grid', placeItems: 'center' }} >
                 {
                     selected
@@ -77,6 +84,7 @@ export const Quizcard = () => {
                         : <span>Please select an answer</span>
                 }
             </div>
+            
 
             <div style={{ display: 'grid', placeItems: 'center' }} >
                 <h3> {DATA[currentQuestion].question} </h3>
@@ -107,6 +115,9 @@ export const Quizcard = () => {
                     color="secondary"
                     onClick={() => handleCurrentQuestion(1)}  > {currentQuestion !== (DATA.length - 1) ? "Next" : "Submit"} </Button>
             </div>
-        </Paper>)
+        </Paper>
+            </Grid>
+        </Grid>  
+        )
     }
 }

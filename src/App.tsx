@@ -46,7 +46,7 @@ function App() {
             <Toast.Body>{notification.body}</Toast.Body>
           </Toast>
       
-        <span style={{ color : 'whitesmoke', fontSize : '6vh', paddingBottom : '3vh' }} >Quiz App with Typescript</span>
+        <span className="largeFont"  >Quiz App with Typescript</span>
           
         <CounterContextProvider>
           <Quizcard />

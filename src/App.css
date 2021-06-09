@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.largeFont {
+    color: whitesmoke;
+    font-size: 5vw;
+    margin-bottom: 5vh;
+}
+
+.MyPaper {
+  width: 40%;
+  padding: 20%;
+  background-color: #523c93;
+  color: whitesmoke;
+  border-radius: 10%;
+  
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
