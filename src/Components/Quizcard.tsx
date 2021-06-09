@@ -86,8 +86,8 @@ export const Quizcard = () => {
             </div>
             
 
-            <div style={{ display: 'grid', placeItems: 'center' }} >
-                <h3> {DATA[currentQuestion].question} </h3>
+            <div style={{ display: 'grid', placeItems: 'center', fontSize : '4vh' }} >
+                <span > {DATA[currentQuestion].question} </span>
             </div>
 
             <Option

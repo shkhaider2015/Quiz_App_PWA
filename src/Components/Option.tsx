@@ -23,7 +23,7 @@ export const Option = ( {opt1,opt2,opt3,opt4, DATA,answers,currentQuestion, hand
     };
 
 
-    return <FormControl component="fieldset">
+    return <FormControl component="fieldset" style={{ fontSize : '2vw' }} >
                 <RadioGroup aria-label="gender" name="gender1" value={answers[currentQuestion]} onChange={handleChange}>
                     <FormControlLabel value={DATA[currentQuestion].option1} control={<Radio color="secondary" />} label={opt1} />
                     <FormControlLabel value={DATA[currentQuestion].option2} control={<Radio color="secondary" />} label={opt2} />
